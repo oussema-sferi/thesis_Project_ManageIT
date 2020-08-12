@@ -5,8 +5,8 @@ require('dotenv').config();
 const db = require('../../models/userSchema').User;
 deleteEmployee.post('/', async (req, res) => {
   const email = req.body.email;
-  const output = `<div><p>Sir Mr :<h5>${req.body.name}</h5></p>
-    Sorry to inform you but we no longer need your services
+  const output = `<div><p>Sir:<h5>${req.body.name}</h5></p>
+    We are sorry to inform you that we no longer need your services.
     <P>Reasons : ${req.body.message}</P>
     </div>
     `;
